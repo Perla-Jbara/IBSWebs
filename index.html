@@ -6,6 +6,10 @@
     <title>Infinity and Beyond Solutions</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+
+    <!-- Fonts being brought in -->
+     <!-- Inter -->
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,19 +18,22 @@
         <div class="galaxy-loader"></div>
     </div>
 
-    <!-- NAVIGATION MENU -->
     <header>
+        <div class="logo-container">
+            <img src="images/businesslogo.jpeg" alt="Business Logo"> 
+            <span class="logo-text">Infinity and Beyond Solutions</span>
+        </div>
         <nav class="navbar">
-            <div class="logo">🚀 Infinity and Beyond Solutions</div>
-            <ul class="nav-links">
-                <li><a href="#intro">About</a></li>
-                <li><a href="#founders">Founders</a></li>
+        <ul class="nav-links">
+            <li><a href="#intro">About</a></li>
+             <!--    <li><a href="#founders">Founders</a></li> -->
                 <li><a href="#technologies">Technologies</a></li>
                 <li><a href="#mission">Mission</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        </ul>
+    </nav>
     </header>
+
     
 
     <!-- MANTRA SECTION -->
@@ -50,36 +57,27 @@
 
     
 
-    <!-- INTRODUCTION -->
-    <section id="intro">
-        <h2>Solutions Beyond Limits</h2>
-        <p>Technology moves fast and so should your business.</p>
-        <div class="services">
-            <div class="service">
-                <img src="images/mobile.png" alt="Mobile App">
-                <h3>Custom Mobile Applications</h3>
-            </div>
-            <div class="service">
-                <img src="images/web.png" alt="Web App">
-                <h3>Custom Web Applications</h3>
-            </div>
-            <div class="service">
-                <img src="images/design.png" alt="Custom Design">
-                <h3>Custom Designs</h3>
-            </div>
-        </div>
-    </section>
+<section id="insidetext">
+    <h1><b>Welcome</b></h1>
 
-    <!-- WELCOME SECTION -->
-    <section id="welcome">
-        <h2>Welcome</h2>
-        <p>Your digital transformation partner, helping businesses reach beyond infinity.</p>
-        <p>Our team of experts is dedicated to crafting innovative solutions tailored to your needs.</p>
-        <p>From mobile apps to custom designs, we turn ideas into reality.</p>
-        <h3>Ready to launch? Let's create something extraordinary!</h3>
-    </section>
+    <p>
+        At Infinity and Beyond Solutions, we don’t <i>just</i> build websites and apps—we create experiences that transform businesses.
+    </p>
 
-    <!-- MEET OUR FOUNDERS (Carousel) -->
+    <p>
+        As a dedicated freelance team, we bring fresh perspectives and personalized solutions to every project we take on.
+        With the flexibility to adapt to your needs, we ensure that each product is crafted with care and precision, no matter the size or scope.
+    </p>
+
+    <p>
+        Whether you need a sleek, high-performance website or a powerful mobile app, we turn ideas into seamless, cutting-edge solutions.
+        With a focus on innovation, scalability, and user experience, we ensure your brand stands out in the digital universe.
+    </p>
+
+    <h3>Ready to launch? Let's create something extraordinary!</h3>
+</section>
+
+    <!-- MEET OUR FOUNDERS (Carousel)
     <section id="founders">
         <h2>Meet Our Founders</h2>
         <div class="founder-carousel">
@@ -89,32 +87,61 @@
         </div>
         <button onclick="prevFounder()">⬅️</button>
         <button onclick="nextFounder()">➡️</button>
-    </section>
+    </section> -->
 
-
-    <!-- TOOLS AND TECHNOLOGIES SECTION -->
-    <section id="technologies">
-        <h2>Our Mission in Innovation</h2>
+    <!-- Our mission in innovation part -->
+    <section id="insidetext">
+        <h1><b>Our Mission in Innovation</b></h1>
+       
         <p><i>“Pushing Boundaries. Delivering Excellence.”</i></p>
-        <p>Our mission is to create groundbreaking technology solutions...</p>
-        <p>We help businesses scale beyond their limits and into the future.</p>
+
+        <p> At Infinity and Beyond Solutions, we believe technology has no limits—and neither should your business.
+            Founded on the principles of innovation, reliability, and creativity, we specialize in custom web and mobile solutions that help brands scale and thrive. </p>
+
+        <p>From startups to enterprises, we provide future-ready digital solutions tailored to your unique needs. 
+            Our team is dedicated to crafting high-quality, scalable applications that go beyond expectations and deliver real results.</p>
+
         <h3>Our mission? To take your business beyond infinity.</h3>
     </section>
 
-    <!-- MISSION SECTION -->
-    <section id="mission">
-        <h2>Our Mission in Innovation</h2>
-        <p><i>“Pushing Boundaries. Delivering Excellence.”</i></p>
-        <p>Our mission is to create groundbreaking technology solutions...</p>
-        <p>We help businesses scale beyond their limits and into the future.</p>
-        <h3>Our mission? To take your business beyond infinity.</h3>
+   
+    
+      <!-- Services Part -->
+      <section id="servicestext">
+        <h1><b>Solutions Beyond Limits</b></h1>
+        <h3>Technology moves fast - so should your business.</h3>
+        <p>
+
+
+        </p>
+        <div class="services">
+            <div class="service">
+                <img src="images/phonelogo.jpg" alt="Mobile App">
+                <h3>Custom Mobile Applications</h3>
+            </div>
+            <div class="service">
+                <img src="images/desktoplogo.jpg" alt="Web App">
+                <h3>Custom Web Applications</h3>
+            </div>
+            <div class="service">
+                <img src="images/designlogo.jpg" alt="Custom Design">
+                <h3>Custom Designs</h3>
+            </div>
+        </div>
+
+        <p>We craft solutions that keep you ahead of the competition.</p>
     </section>
+
 
     <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Let’s Connect!</h2>
+    <section id="insidetext">
+        <h1><b>Let’s Connect!</b></h1>
+        <p>Have an idea? Need a solution? Let’s build something extraordinary together. Whether you're looking for a custom website, 
+            a next-gen mobile app, or innovative business solutions, we’re here to make it happen.</p>
+
         <p>Your digital transformation starts here.</p>
-        <p>Get in touch today and let's take your business beyond infinity.</p>
+
+        <h3>Get in touch today and let's take your business beyond infinity.</h3>
         <form>
             <input type="email" placeholder="Enter your email">
             <button type="submit">Send</button>
@@ -123,3 +150,4 @@
 
 </body>
 </html>
+
