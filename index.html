@@ -16,24 +16,39 @@
 
     <!-- NAVIGATION MENU -->
     <header>
-        <div class="logo">🚀 Infinity and Beyond Solutions</div>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">🚀 Infinity and Beyond Solutions</div>
+            <ul class="nav-links">
                 <li><a href="#intro">About</a></li>
                 <li><a href="#founders">Founders</a></li>
+                <li><a href="#technologies">Technologies</a></li>
                 <li><a href="#mission">Mission</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
 
     <!-- MANTRA SECTION -->
-    <section id="mantra">
-        <div class="galaxy-background"></div>
+<section id="mantra">
+    <!-- Background Video -->
+    <video autoplay muted loop id="galaxy-video">
+        <source src="videos/rotatinggalaxy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Opaque Layer -->
+    <div class="overlay"></div>
+
+    <!-- Mantra Text -->
+    <div class="mantra-content">
         <h1><span>Innovate.</span></h1>
         <h1><span>Elevate.</span></h1>
         <h1><span>Dominate.</span></h1>
-    </section>
+    </div>
+</section>
+
+    
 
     <!-- INTRODUCTION -->
     <section id="intro">
@@ -50,7 +65,7 @@
             </div>
             <div class="service">
                 <img src="images/design.png" alt="Custom Design">
-                <h3>Custom Customer Design</h3>
+                <h3>Custom Designs</h3>
             </div>
         </div>
     </section>
@@ -74,6 +89,16 @@
         </div>
         <button onclick="prevFounder()">⬅️</button>
         <button onclick="nextFounder()">➡️</button>
+    </section>
+
+
+    <!-- TOOLS AND TECHNOLOGIES SECTION -->
+    <section id="technologies">
+        <h2>Our Mission in Innovation</h2>
+        <p><i>“Pushing Boundaries. Delivering Excellence.”</i></p>
+        <p>Our mission is to create groundbreaking technology solutions...</p>
+        <p>We help businesses scale beyond their limits and into the future.</p>
+        <h3>Our mission? To take your business beyond infinity.</h3>
     </section>
 
     <!-- MISSION SECTION -->
