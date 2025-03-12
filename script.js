@@ -69,3 +69,15 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 
 
 
+    // Show the message box after form submission (you can adjust this based on your needs)
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission for demo
+        document.querySelector('#message-box').style.display = 'flex'; // Show message box
+    });
+
+    // Close the message box when the close button is clicked
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        document.querySelector('#message-box').style.display = 'none'; // Hide message box
+    });
+
+

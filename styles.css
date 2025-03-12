@@ -298,3 +298,93 @@ html {
 }
 
 
+/* Contact Section Styling */
+#contact-us {
+    text-align: center;
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#contact-us h1, #contact-us h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#contact-us p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form input, form button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #F975FB;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e67fd9;
+}
+
+/* Message Box Styling */
+#message-box {
+    display: none; /* Hidden initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.message-box {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    width: 80%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.message-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.message-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.message-box .close-btn {
+    padding: 10px 20px;
+    background-color: #F975FB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.message-box .close-btn:hover {
+    background-color: #e67fd9;
+}
+
