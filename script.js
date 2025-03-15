@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".nav-links a").forEach(anchor => {
         anchor.addEventListener("click", function (e) {
@@ -24,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(() => {
+    /*setTimeout(() => {
         document.getElementById("loading-screen").style.display = "none";
-    }, 3000);
+    }, 3000);*/
 
     let founders = [
         { name: "Perla Jbara", img: "images/founder1.jpg", desc: "Tech leader with vast experience..." },
@@ -69,15 +68,37 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 
 
 
-    // Show the message box after form submission (you can adjust this based on your needs)
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission for demo
-        document.querySelector('#message-box').style.display = 'flex'; // Show message box
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselItems = document.querySelectorAll(".carousel-item");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        carouselItems.forEach((item, index) => {
+            if (index === currentIndex) {
+                item.classList.add("active");
+                item.style.left = "0";
+            } else {
+                item.classList.remove("active");
+                item.style.left = "100%"; // Hide non-active items
+            }
+        });
+    }
+
+    prevBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex === 0) ? carouselItems.length - 1 : currentIndex - 1;
+        updateCarousel();
     });
 
-    // Close the message box when the close button is clicked
-    document.querySelector('.close-btn').addEventListener('click', function() {
-        document.querySelector('#message-box').style.display = 'none'; // Hide message box
+    nextBtn.addEventListener("click", function () {
+        currentIndex = (currentIndex === carouselItems.length - 1) ? 0 : currentIndex + 1;
+        updateCarousel();
     });
 
-
+    // Initialize the first item
+    updateCarousel();
+});
